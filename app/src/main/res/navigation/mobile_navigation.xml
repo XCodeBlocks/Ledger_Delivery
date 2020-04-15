@@ -3,23 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_ledger">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.xcodeblocks.ledger_delivery.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/navigation_ledger"
+        android:name="com.xcodeblocks.ledger_delivery.ui.ledger.LedgerFragment"
+        android:label="@string/title_ledger"
+        tools:layout="@layout/fragment_ledger" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.xcodeblocks.ledger_delivery.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_delivery"
+        android:name="com.xcodeblocks.ledger_delivery.ui.delivery.DeliveryFragment"
+        android:label="@string/title_delivery"
+        tools:layout="@layout/fragment_delivery" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.xcodeblocks.ledger_delivery.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_settings"
+        android:name="com.xcodeblocks.ledger_delivery.ui.settings.SettingsFragment"
+        android:label="@string/title_settings"
+        tools:layout="@layout/fragment_settings" />
 </navigation>

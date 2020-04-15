@@ -1,13 +1,13 @@
-package com.xcodeblocks.ledger_delivery.ui.notifications
+package com.xcodeblocks.ledger_delivery.ui.settings
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class NotificationsViewModel : ViewModel() {
+class SettingsViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is notifications Fragment"
+        value = "This is notifications Fragment / SETTINGS"
     }
     val text: LiveData<String> = _text
 }

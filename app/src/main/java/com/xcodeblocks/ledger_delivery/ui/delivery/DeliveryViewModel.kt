@@ -1,13 +1,13 @@
-package com.xcodeblocks.ledger_delivery.ui.home
+package com.xcodeblocks.ledger_delivery.ui.delivery
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class HomeViewModel : ViewModel() {
+class DeliveryViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is home Fragment"
+        value = "This is dashboard Fragment / DELIVERY"
     }
     val text: LiveData<String> = _text
 }

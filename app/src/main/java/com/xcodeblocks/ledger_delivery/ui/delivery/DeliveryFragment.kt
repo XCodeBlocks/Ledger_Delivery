@@ -1,4 +1,4 @@
-package com.xcodeblocks.ledger_delivery.ui.notifications
+package com.xcodeblocks.ledger_delivery.ui.delivery
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,20 +10,20 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.xcodeblocks.ledger_delivery.R
 
-class NotificationsFragment : Fragment() {
+class DeliveryFragment : Fragment() {
 
-    private lateinit var notificationsViewModel: NotificationsViewModel
+    private lateinit var deliveryViewModel: DeliveryViewModel
 
     override fun onCreateView(
             inflater: LayoutInflater,
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-        notificationsViewModel =
-                ViewModelProviders.of(this).get(NotificationsViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_notifications, container, false)
-        val textView: TextView = root.findViewById(R.id.text_notifications)
-        notificationsViewModel.text.observe(viewLifecycleOwner, Observer {
+        deliveryViewModel =
+                ViewModelProviders.of(this).get(DeliveryViewModel::class.java)
+        val root = inflater.inflate(R.layout.fragment_delivery, container, false)
+        val textView: TextView = root.findViewById(R.id.text_delivery)
+        deliveryViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
         return root

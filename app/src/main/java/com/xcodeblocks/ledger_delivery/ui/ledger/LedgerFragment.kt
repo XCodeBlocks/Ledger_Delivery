@@ -1,4 +1,4 @@
-package com.xcodeblocks.ledger_delivery.ui.dashboard
+package com.xcodeblocks.ledger_delivery.ui.ledger
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,20 +10,20 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.xcodeblocks.ledger_delivery.R
 
-class DashboardFragment : Fragment() {
+class LedgerFragment : Fragment() {
 
-    private lateinit var dashboardViewModel: DashboardViewModel
+    private lateinit var ledgerViewModel: LedgerViewModel
 
     override fun onCreateView(
             inflater: LayoutInflater,
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-        dashboardViewModel =
-                ViewModelProviders.of(this).get(DashboardViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_dashboard, container, false)
-        val textView: TextView = root.findViewById(R.id.text_dashboard)
-        dashboardViewModel.text.observe(viewLifecycleOwner, Observer {
+        ledgerViewModel =
+                ViewModelProviders.of(this).get(LedgerViewModel::class.java)
+        val root = inflater.inflate(R.layout.fragment_ledger, container, false)
+        val textView: TextView = root.findViewById(R.id.text_ledger)
+        ledgerViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
         return root
