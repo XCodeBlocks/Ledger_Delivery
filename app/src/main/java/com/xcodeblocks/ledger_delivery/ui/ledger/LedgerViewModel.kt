@@ -7,7 +7,7 @@ import androidx.lifecycle.ViewModel
 class LedgerViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is home Fragment / LEDGER"
+        value = "This is LEDGER Fragment"
     }
     val text: LiveData<String> = _text
 }

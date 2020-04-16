@@ -7,7 +7,7 @@ import androidx.lifecycle.ViewModel
 class DeliveryViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is dashboard Fragment / DELIVERY"
+        value = "This is DELIVERY Fragment"
     }
     val text: LiveData<String> = _text
 }
